@@ -32,16 +32,16 @@ def kalman(dat,b_before,var_estados,var_obser,b_after,Gan,sal,sal_ant,index):
 
 def write_intxt(date,adc_dat,volts_dat,voltsK_dat,delta):
  try:
-  datos=open("/home/pi/Desktop/Tesis/data_set/adc_veg.txt","a")
+  datos=open("/home/pi/Desktop/SEBASTIAN_TESIS/data_set/adc_veg.txt","a")
   datos.write(str(date)+" "+str(adc_dat[0])+" "+str(adc_dat[1])+" "
               +str(adc_dat[2])+" "+str(adc_dat[3])+" "+delta+"\n")
   datos.close()
   
-  datos=open("/home/pi/Desktop/Tesis/data_set/volts_veg.txt","a")
+  datos=open("/home/pi/Desktop/SEBASTIAN_TESIS/data_set/volts_veg.txt","a")
   datos.write(str(date)+" "+str(volts_dat[0])+" "+str(volts_dat[1])+" "
               +str(volts_dat[2])+" "+str(volts_dat[3])+" "+delta+"\n")
   datos.close()
-  datos=open("/home/pi/Desktop/Tesis/data_set/voltsk_veg.txt","a")
+  datos=open("/home/pi/Desktop/SEBASTIAN_TESIS/data_set/voltsk_veg.txt","a")
   datos.write(str(date)+" "+str(voltsK_dat[0])+" "+str(voltsK_dat[1])+" "
               +str(voltsK_dat[2])+" "+str(voltsK_dat[3])+" "+delta+"\n")
   datos.close()
